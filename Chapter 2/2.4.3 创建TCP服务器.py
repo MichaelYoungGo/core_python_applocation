@@ -20,12 +20,12 @@ while True:
     tcpCliSock, addr = tcpSerSock.accept()
     print('.....connected from : ', addr)
     while True:
-        data = tcpSerSock.recv(BUFSIZ)
+        data = tcpCliSock.recv(BUFSIZ)
         if not data:
             break
-        tcpSerSock.send('[%s]%s'%(bytes(ctime(), 'utf-8'), data))
-
-    tcpSerSock.close()
+        tcpCliSock.send(('[%s] %s' % (ctime(), data)).encode('utf-8'))
+        print('收到数据，服务器在运行！！')
+    tcpCliSock.close()
 tcpSerSock.close
 
 
