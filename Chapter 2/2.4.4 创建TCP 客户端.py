@@ -24,4 +24,3 @@ while True:
     print(data.decode('utf-8'))
 
 tcpCliSock.close()
-
