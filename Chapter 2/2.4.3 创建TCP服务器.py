@@ -27,12 +27,3 @@ while True:
         print('收到数据，服务运行中！！')
     tcpCliSock.close()
 tcpSerSock.close
-
-
-
-
-
-
-
-
-
