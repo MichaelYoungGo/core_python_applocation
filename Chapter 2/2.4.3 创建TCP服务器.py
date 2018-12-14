@@ -24,7 +24,7 @@ while True:
         if not data:
             break
         tcpCliSock.send(('[%s] %s' % (ctime(), data)).encode('utf-8'))
-        print('收到数据，服务器在运行！！')
+        print('收到数据，服务运行中！！')
     tcpCliSock.close()
 tcpSerSock.close
 
