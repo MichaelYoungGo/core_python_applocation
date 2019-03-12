@@ -1,4 +1,4 @@
-#!"E:\Project\core python applocation\venv\Scripts\python.exe"
+#!E:\Project\PythonºËÐÄ±à³Ì\venv\Scripts\python.exe -x
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==9.0.1','console_scripts','pip3'
 __requires__ = 'pip==9.0.1'
 import re
