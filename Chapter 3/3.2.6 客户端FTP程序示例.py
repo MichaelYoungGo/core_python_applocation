@@ -7,17 +7,20 @@ import ftplib
 import os
 import socket
 
-HOST = "ftp.mozilla.org"
+HOST = "202.196.160.15"
 DIRN = "pub/mozilla.org/webtools"
 FILE = "bugzilla-LATEST.tar.gz"
 
 def main():
     try:
+        print('创建连接')
         f = ftplib.FTP(HOST)
+        print('正在连接中..........')
     except (socket.error, socket.gaierror) as e:
         print("ERROR: cannot reach %s" %HOST)
         print(e)
         return
+    print('连接成功！！')
 
     try:
         f.login()
